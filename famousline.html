@@ -1,0 +1,207 @@
+<!DOCTYPE html> <!-- 22061007권태리 -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FAMOUSLINE - SING STREET</title>
+
+	<!-- 레이아웃 -->
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+      background-color: black;
+		}
+		nav {
+			width: 20%;
+			height: 50%;
+			margin-top: 2%;
+			margin-left: 3%;
+			position: fixed;
+		}
+		section {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+      color: white;
+		}
+    .left {
+      float:left;
+      margin:200px 0 0 230px;
+      font-color: #ffffff;
+    }
+    .right {
+      float:right;
+      margin: 100px 50px 0 0;
+      padding: 100px 0 0 0;
+    }
+    .fml_r {
+      float:right;
+      padding:200px 150px 0 0;
+    }
+    .fml_l {
+      float: left;
+      margin:200px 0 0 200px;
+    }
+	</style>
+
+	<!-- 내비게이션 (고정) -->
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&display=swap');
+		nav {
+			font-family: 'Antonio', sans-serif;
+		}
+		nav a {
+			text-decoration: none;
+			transition: 0.5s;
+			color: rgba(256, 256, 256, 0.75);
+		}
+		nav a:hover {
+			color: rgb(256, 256, 256);
+		}
+		nav button {
+			font-family: 'Antonio', sans-serif;
+			background: transparent;
+			border: none;
+			font-size: 180%;
+		}
+		button img {
+			position: absolute;
+			left: 0;
+			width: 45%;
+			opacity: 75%;
+			transition: 0.5s;
+		}
+		button img:hover {
+			opacity: 100%;
+		}
+		.btn {
+			text-align: center;
+		}
+		.flipbtn {
+			background: transparent;
+			border: none;
+			transition: 0.5s;
+			color: rgba(256, 256, 256, 0.75);
+			padding: 0;
+			font-size: 17pt;
+			line-height: 30pt;
+		}
+		.flipbtn:hover {
+			color: rgb(256, 256, 256);
+		}
+		.panel_about {
+			display: none;
+			font-family: 'Antonio', sans-serif;
+		}
+		.panel_about a {
+			font-size: 15pt;
+		}
+		.panel_crtr {
+			display: none;
+			font-family: 'Antonio', sans-serif;
+		}
+		.panel_crtr a {
+			font-size: 15pt;
+		}
+		.panel_ost {
+			display: none;
+		}
+	</style>
+
+	<!-- 본문 -->
+	<style type="text/css">
+	</style>
+
+	<!-- JavaScript-->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/fade.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".flip_about").click(function() {
+				$(".panel_about").slideToggle("slow");
+			});
+			$(".flip_crtr").click(function() {
+				$(".panel_crtr").slideToggle("slow");
+			});
+
+		});
+	</script>
+</head>
+<body>
+  <nav class="n">
+		<div class="panel">
+			<div> <!-- 메인으로 -->
+				<div class="btn">
+					<button>
+						<a href="index.html"><img src="images/logo.png"></a>
+					</button>
+				</div>
+				<br><br><br><br><br><br><br>
+			</div>
+			<div class="flip_about">
+				<button class="flipbtn" class="btn1">ABOUT</button>
+			</div>
+			<div class="panel_about">
+				<p><a href="summary.html">&nbsp;&nbsp;&nbsp;SUMMARY</a></p>
+				<p><a href="trailer.html">&nbsp;&nbsp;&nbsp;TRAILERS</a></p>
+			</div>
+			<div class="flip_crtr">
+				<button class="flipbtn">CHARACTERS</button>
+			</div>
+			<div class="panel_crtr">
+				<p><a href="cast.html">&nbsp;&nbsp;&nbsp;CAST</a></p>
+				<p><a href="famousline.html">&nbsp;&nbsp;&nbsp;FAMOUS LINES</a></p>
+			</div>
+			<div>
+				<button class="flipbtn"><a href="goods.html">GOODS</a></button>
+			</div>
+		</div>
+	</nav>
+	<section>
+		<!-- 본문 -->
+    <div class="left">
+      <img src="images/fml_3.jpg" width="500px" alt="">
+    </div>
+    <div class="fml_r">
+      <h3>"Your problem is that you're not happy being sad. <br>
+      But that's what love is, Cosmo. Happy sad"</h3>
+      <p>"슬픔을 행복해하지 못하는게 네 문제야. <br> 하지만 사랑이란 그런거야,
+        코스모. 행복한 슬픔말야."</p>
+    </div>
+
+    <div class="right">
+      <img src="images/ep_3.jpg" width="500px" alt="">
+    </div>
+    <div class="fml_l">
+      <h3>"You're just material for my songs <br>
+        You only have the power to stop things, but not to create"</h3>
+      <p>"너랑 나는 사는 세상이 달라. 넌 내 노래의 소재일 뿐이지." <br>
+      "넌 박살낼 줄만 알지, 뭔가를 만들어내지는 못하잖아."</p>
+    </div>
+
+    <div class="left">
+      <img src="images/주인공2.jpg" width="500px" alt="">
+    </div>
+    <div class="fml_r">
+      <h2>"I'm a futurist"</h2>
+      <p>"전 미래파에요.<br> 미래파는 뒤를 보지않고, 앞으로만 가는거야"</p>
+    </div>
+
+    <div class="right">
+      <img src="images/water.jpg" width="500px" alt="">
+    </div>
+    <div class="fml_l">
+      <h2>"You can never do andything by half"</h2>
+      <p>"절대 적당히해서는 안돼. 알겠니?"</p> <br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+
+	</section>
+</body>
+</html>
+
+  </body>
+</html>

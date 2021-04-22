@@ -1,0 +1,341 @@
+<!DOCTYPE html> <!-- 22061007권태리 -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CAST - SING STREET</title>
+
+	<!-- 레이아웃 -->
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+			background-image:url("images/bg.png");
+			background-repeat:no-repeat;
+			background-position:center top;
+		}
+		nav {
+			width: 20%;
+			height: 50%;
+			margin-top: 2%;
+			margin-left: 3%;
+			position: fixed;
+		}
+		section {
+			display: inline-block;
+			float: right;
+			width: 85%;
+			height: 100%;
+		}
+	</style>
+
+	<!-- 내비게이션 (고정) -->
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&display=swap');
+		nav {
+			font-family: 'Antonio', sans-serif;
+		}
+		nav a {
+			text-decoration: none;
+			transition: 0.5s;
+			color: rgba(256, 256, 256, 0.75);
+		}
+		nav a:hover {
+			color: rgb(256, 256, 256);
+		}
+		nav button {
+			font-family: 'Antonio', sans-serif;
+			background: transparent;
+			border: none;
+			font-size: 180%;
+		}
+		button img {
+			position: absolute;
+			left: 0;
+			width: 45%;
+			opacity: 75%;
+			transition: 0.5s;
+		}
+		button img:hover {
+			opacity: 100%;
+		}
+		.btn {
+			text-align: center;
+		}
+		.flipbtn {
+			background: transparent;
+			border: none;
+			transition: 0.5s;
+			color: rgba(256, 256, 256, 0.75);
+			padding: 0;
+			font-size: 17pt;
+			line-height: 30pt;
+		}
+		.flipbtn:hover {
+			color: rgb(256, 256, 256);
+		}
+		.panel_about {
+			display: none;
+			font-family: 'Antonio', sans-serif;
+		}
+		.panel_about a {
+			font-size: 15pt;
+		}
+		.panel_crtr {
+			display: none;
+			font-family: 'Antonio', sans-serif;
+		}
+		.panel_crtr a {
+			font-size: 15pt;
+		}
+		.panel_ost {
+			display: none;
+		}
+	</style>
+
+	<!-- 본문 -->
+	<style type="text/css">
+		@font-face {
+		     font-family: 'S-CoreDream-3Light';
+		     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+		     font-weight: normal;
+		     font-style: normal;
+		}
+		@font-face {
+		     font-family: 'S-CoreDream-6Bold';
+		     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+		     font-weight: normal;
+		     font-style: normal;
+		}
+		@font-face {
+		     font-family: 'S-CoreDream-2ExtraLight';
+		     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+		     font-weight: normal;
+		     font-style: normal;
+		}
+		.line1 {
+			align-items: center;
+			width: 67.5%;
+			height: 30%;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 3%;
+		}
+		.line2 {
+			align-items: center;
+			width: 90%;
+			height: 30%;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 5%;
+		}
+		.hover_img a {
+			position: relative;
+		}
+		.hover_img a span {
+			position: absolute;
+			display: none;
+			z-index: 99;
+		}
+		.hover_img a:hover span {
+			display: block;
+		}
+		.position {
+			font-family: 'S-CoreDream-2ExtraLight';
+			color: #FFF;
+			font-size: 11pt;
+		}
+		.name {
+			font-family: 'S-CoreDream-6Bold';
+			color: #FFF;
+		}
+		.actor {
+			font-family: 'S-CoreDream-2ExtraLight';
+			color: #FFF;
+			opacity: 50%;
+			font-size: 10pt;
+		}
+	</style>
+
+	<!-- JavaScript-->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".flip_about").click(function() {
+				$(".panel_about").slideToggle("slow");
+			});
+			$(".flip_crtr").click(function() {
+				$(".panel_crtr").slideToggle("slow");
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		document.addEventListener('mousemove', function(e) {
+		  let body = document.querySelector('body');
+		  let circle = document.getElementById('circle1');
+		  let left = e.offsetX-180;
+		  let top = e.offsetY-180;
+		  circle.style.left = left + 'px';
+		  circle.style.top = top + 'px';
+		});
+		document.addEventListener('mousemove', function(e) {
+		  let body = document.querySelector('body');
+		  let circle = document.getElementById('circle2');
+		  let left = e.offsetX-180;
+		  let top = e.offsetY-180;
+		  circle.style.left = left + 'px';
+		  circle.style.top = top + 'px';
+		});
+		document.addEventListener('mousemove', function(e) {
+		  let body = document.querySelector('body');
+		  let circle = document.getElementById('circle3');
+		  let left = e.offsetX-180;
+		  let top = e.offsetY-180;
+		  circle.style.left = left + 'px';
+		  circle.style.top = top + 'px';
+		});
+		document.addEventListener('mousemove', function(e) {
+		  let body = document.querySelector('body');
+		  let circle = document.getElementById('circle4');
+		  let left = e.offsetX-180;
+		  let top = e.offsetY-180;
+		  circle.style.left = left + 'px';
+		  circle.style.top = top + 'px';
+		});
+		document.addEventListener('mousemove', function(e) {
+		  let body = document.querySelector('body');
+		  let circle = document.getElementById('circle5');
+		  let left = e.offsetX-180;
+		  let top = e.offsetY-180;
+		  circle.style.left = left + 'px';
+		  circle.style.top = top + 'px';
+		});
+		document.addEventListener('mousemove', function(e) {
+		  let body = document.querySelector('body');
+		  let circle = document.getElementById('circle6');
+		  let left = e.offsetX-180;
+		  let top = e.offsetY-180;
+		  circle.style.left = left + 'px';
+		  circle.style.top = top + 'px';
+		});
+		document.addEventListener('mousemove', function(e) {
+		  let body = document.querySelector('body');
+		  let circle = document.getElementById('circle7');
+		  let left = e.offsetX-180;
+		  let top = e.offsetY-180;
+		  circle.style.left = left + 'px';
+		  circle.style.top = top + 'px';
+		});
+	</script>
+</head>
+<body>
+	<nav class="n">
+		<div class="panel">
+			<div> <!-- 메인으로 -->
+				<div class="btn">
+					<button>
+						<a href="index.html"><img src="images/logo.png"></a>
+					</button>
+				</div>
+				<br><br><br><br><br><br><br>
+			</div>
+			<div class="flip_about">
+				<button class="flipbtn" class="btn1">ABOUT</button>
+			</div>
+			<div class="panel_about">
+				<p><a href="summary.html">&nbsp;&nbsp;&nbsp;SUMMARY</a></p>
+				<p><a href="trailer.html">&nbsp;&nbsp;&nbsp;TRAILERS</a></p>
+			</div>
+			<div class="flip_crtr">
+				<button class="flipbtn">CHARACTERS</button>
+			</div>
+			<div class="panel_crtr">
+				<p><a href="cast.html">&nbsp;&nbsp;&nbsp;CAST</a></p>
+				<p><a href="famousline.html">&nbsp;&nbsp;&nbsp;FAMOUS LINES</a></p>
+			</div>
+			<div>
+				<button class="flipbtn"><a href="goods.html">GOODS</a></button>
+			</div>
+		</div>
+	</nav>
+	<section>
+		<table class="line1">
+			<tr>
+				<th>
+					<div class="hover_img">
+						<a href="#">
+							<img src="images/frame/frame1.png" width="90%">
+							<span id="circle1"><img src="images/emoji/emoji1.gif" alt="image" height="200" /></span>
+						</a>
+					</div>
+				</th>
+				<th>
+					<div class="hover_img">
+						<a href="#">
+							<img src="images/frame/frame2.png" width="90%">
+							<span id="circle2"><img src="images/emoji/emoji2.gif" alt="image" height="200" /></span>
+						</a>
+					</div>
+				</th>
+				<th>
+					<div class="hover_img">
+						<a href="#">
+							<img src="images/frame/frame3.png" width="90%">
+							<span id="circle3"><img src="images/emoji/emoji3.gif" alt="image" height="200" /></span>
+						</a>
+					</div>
+				</th>
+			</tr>
+			<tr style="height: 20%;">
+				<th><span class="position">모델</span>&nbsp;<span class="name">라피나</span><br><span class="actor">루시 보인턴</span></th>
+				<th><span class="position">보컬</span>&nbsp;<span class="name">코너</span><br><span class="actor">페리다 월시-필로</span></th>
+				<th><span class="position">폭군</span>&nbsp;<span class="name">배리</span><br><span class="actor">이안 케니</span></th>
+			</tr>
+		</table>
+		<br>
+		<table class="line2">
+			<tr>
+				<th>
+					<div class="hover_img">
+						<a href="#">
+							<img src="images/frame/frame4.png" width="90%">
+							<span id="circle4"><img src="images/emoji/emoji4.gif" alt="image" height="200" /></span>
+						</a>
+					</div>
+				</th>
+				<th>
+					<div class="hover_img">
+						<a href="#">
+							<img src="images/frame/frame5.png" width="90%">
+							<span id="circle5"><img src="images/emoji/emoji5.gif" alt="image" height="200" /></span>
+						</a>
+					</div>
+				</th>
+				<th>
+					<div class="hover_img">
+						<a href="#">
+							<img src="images/frame/frame6.png" width="90%">
+							<span id="circle6"><img src="images/emoji/emoji6.gif" alt="image" height="200" /></span>
+						</a>
+					</div>
+				</th>
+				<th>
+					<div class="hover_img">
+						<a href="#">
+							<img src="images/frame/frame7.png" width="90%">
+							<span id="circle7"><img src="images/emoji/emoji7.gif" alt="image" height="200" /></span>
+						</a>
+					</div>
+				</th>
+			</tr>
+			<tr style="height: 10%;">
+				<th><span class="position">매니저</span>&nbsp;<span class="name">대런</span><br><span class="actor">벤 캐롤란</span></th>
+				<th><span class="position">기타</span>&nbsp;<span class="name">에먼</span><br><span class="actor">마크 멕케나</span></th>
+				<th><span class="position">베이스</span>&nbsp;<span class="name">래리</span><br><span class="actor">코너 해밀턴</span></th>
+				<th><span class="position">키보드</span>&nbsp;<span class="name">잉기</span><br><span class="actor">퍼시 참브루카</span></th>
+			</tr>
+		</table>
+	</section>
+</body>
+</html>
