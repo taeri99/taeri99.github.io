@@ -1,0 +1,269 @@
+<!DOCTYPE html> <!-- 22061007권태리 -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SUMMARY - SING STREET</title>
+
+	<!-- 레이아웃 -->
+	<style type="text/css">
+		html, body {
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			padding: 0;
+			background-color:black;
+		}
+		nav {
+			width: 20%;
+			height: 50%;
+			margin-top: 2%;
+			margin-left: 3%;
+			position: fixed;
+		}
+		section {
+			float: right;
+			margin-top: 5%;
+			margin-right: 5%;
+			width: 80%;
+			height: 80%;
+			color: white;
+			overflow-y: scroll;
+		}
+	</style>
+
+	<!-- 내비게이션 (고정) -->
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&display=swap');
+		nav {
+			font-family: 'Antonio', sans-serif;
+		}
+		nav a {
+			text-decoration: none;
+			transition: 0.5s;
+			color: rgba(256, 256, 256, 0.75);
+		}
+		nav a:hover {
+			color: rgb(256, 256, 256);
+		}
+		nav button {
+			font-family: 'Antonio', sans-serif;
+			background: transparent;
+			border: none;
+			font-size: 180%;
+		}
+		button img {
+			position: absolute;
+			left: 0;
+			width: 45%;
+			opacity: 75%;
+			transition: 0.5s;
+		}
+		button img:hover {
+			opacity: 100%;
+		}
+		.btn {
+			text-align: center;
+		}
+		.flipbtn {
+			background: transparent;
+			border: none;
+			transition: 0.5s;
+			color: rgba(256, 256, 256, 0.75);
+			padding: 0;
+			font-size: 17pt;
+			line-height: 30pt;
+		}
+		.flipbtn:hover {
+			color: rgb(256, 256, 256);
+		}
+		.panel_about {
+			display: none;
+			font-family: 'Antonio', sans-serif;
+		}
+		.panel_about a {
+			font-size: 15pt;
+		}
+		.panel_crtr {
+			display: none;
+			font-family: 'Antonio', sans-serif;
+		}
+		.panel_crtr a {
+			font-size: 15pt;
+		}
+		.panel_ost {
+			display: none;
+		}
+	</style>
+
+    <!-- 본문 -->
+    <style type="text/css">
+    	.ep {
+			max-width: 100%;
+			margin: 0 auto;
+			overflow: hidden;
+			position: relative;
+		}
+		.ep li {
+			display: inline-block;
+		}
+    	.box {
+    		position: relative;
+    		margin: 0 auto;
+    		padding-top: 5%;
+    		padding-bottom: 10%;
+    		width: 90%;
+    	}
+    	.scrn {
+    		float: left;
+    		width: 50%;
+    		padding-right: 5%;
+    	}
+    	.smr {
+    		float: right;
+    		width: 40%;
+    		padding-right: 5%;
+    	}
+    	::-webkit-scrollbar {width: 4px; background-color: rgba(255, 255, 255, 0.1);}
+		::-webkit-scrollbar-thumb {background: rgba(255, 255, 255, 0.4);}
+    </style>
+
+    <!-- JavaScript-->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".flip_about").click(function() {
+				$(".panel_about").slideToggle("slow");
+			});
+			$(".flip_crtr").click(function() {
+				$(".panel_crtr").slideToggle("slow");
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav class="n">
+		<div class="panel">
+			<div> <!-- 메인으로 -->
+				<div class="btn">
+					<button>
+						<a href="index.html"><img src="images/logo.png"></a>
+					</button>
+				</div>
+				<br><br><br><br><br><br><br>
+			</div>
+			<div class="flip_about">
+				<button class="flipbtn" class="btn1">ABOUT</button>
+			</div>
+			<div class="panel_about">
+				<p><a href="summary.html">&nbsp;&nbsp;&nbsp;SUMMARY</a></p>
+				<p><a href="trailer.html">&nbsp;&nbsp;&nbsp;TRAILERS</a></p>
+			</div>
+			<div class="flip_crtr">
+				<button class="flipbtn">CHARACTERS</button>
+			</div>
+			<div class="panel_crtr">
+				<p><a href="cast.html">&nbsp;&nbsp;&nbsp;CAST</a></p>
+				<p><a href="famousline.html">&nbsp;&nbsp;&nbsp;FAMOUS LINES</a></p>
+			</div>
+			<div>
+				<button class="flipbtn"><a href="goods.html">GOODS</a></button>
+			</div>
+		</div>
+	</nav>
+	<section>
+		<div class="ep">
+	       	<ul>
+		       	<li>
+		       		<div class="box">
+		       			<div class="scrn">
+			       			<img src="images/summary/ep1.jpg" width="100%">
+			       		</div>
+			       		<div class="smr">
+			       			<h3># 1</h3>
+			       			<hr size="1px" color="#FFF" style="opacity: 50%;">
+			       			<p>코너는 집안 형편 때문에 '싱 스트리트'에 있는 똥통 학교로 전학을 가게 된다.
+										학교 앞에서 늘 모델 자세로 담배를 피우고 있는 라피나.
+										첫눈에 반한 코너는 밴드를 하고 있다는 거짓말을 하고,
+										뮤직비디오 출연 제의를 하며 번호를 따낸다. </p>
+		        		</div>
+		       		</div>
+		       	</li>
+		       	<li>
+		       		<div class="box">
+		       			<div class="scrn">
+			       			<img src="images/summary/ep3.jpg" width="100%">
+			       		</div>
+			       		<div class="smr">
+			       			<h3># 2</h3>
+			       			<hr size="1px" color="#FFF" style="opacity: 50%;">
+			       			<p>라피나에게 반한 코너는, 라피나를 생각하며 곡을 쓰기로 결정한다.
+									그리고 밴드 연주자와 함께 어떤 콘셉트로, 어떤 곡을 쓰고 싶은지에 대해
+							  	회의한다. 우선 남주는 곡에 담아내고싶은 여주에 대한 자신의 감상을 말한다.</p>
+		        		</div>
+		       		</div>
+		       	</li>
+		       	<li>
+		       		<div class="box">
+		       			<div class="scrn">
+			       			<img src="images/summary/water.jpg" width="100%">
+			       		</div>
+			       		<div class="smr">
+			       			<h3># 3</h3>
+			       			<hr size="1px" color="#FFF" style="opacity: 50%;">
+			       			<p>밴드는 뮤직비디오를 촬영하기 위해 바다로 간다.
+									   밴드 멤버들은 라피나에게 바다에 빠지는 척을 하라고 지시했지만,
+									   라피나는 진짜로 바다에 뛰어들었고, 코너가 바다에 빠진 라피나를 구한다.
+									   코너가 왜 그랬냐고 묻자ㅏ, 라피나는 우리의 작품을 위해서라면 절대 적당히
+									   해선 안된다고 말한다. 이후 코너와 라피나는 첫 키스를 한다.</p>
+			       		</div>
+		       		</div>
+		       	</li>
+		        <li>
+		        	<div class="box">
+	        			<div class="scrn">
+		        			<img src="images/summary/ep4.jpg" width="100%">
+		        		</div>
+			       		<div class="smr">
+			       			<h3># 4</h3>
+			       			<hr size="1px" color="#FFF" style="opacity: 50%;">
+			       			<p>런던으로 떠났다던 라피나를 우연히 발견하게되고, 런던에서 있던 일을
+									   털어놓았다. 라피나는 자신의 처지를 비관적으로 보았으며, 코너를 남자로
+									   인정하지 않는 태도를 보였고, 이에 실망한 코너는 집으로 돌아간다.</p>
+			        	</div>
+		       		</div>
+		       	</li>
+		       	<li>
+		       		<div class="box">
+		       			<div class="scrn">
+			       			<img src="images/summary/ep5.jpg" width="100%">
+			       		</div>
+			       		<div class="smr">
+			       			<h3># 5</h3>
+			       			<hr size="1px" color="#FFF" style="opacity: 50%;">
+			       			<p>학교 축제일이 되고, 싱스트리트 밴드의 공연은 학생들에게 뜨거운 반응을 얻는다.
+									   마지막 곡은 'Brown Shoes', 코너의 갈색 신발을 빼앗으며 검은 신발만을 강요했던
+									   백스터 교사를 비판하기 위한 곡이다. 밴드는 미리만들어 둔 그의 얼굴 가면을 뿌리기
+									   시작하고, 신랄한 비파나 기사에 학생들이 환호한다.</p>
+		        		</div>
+		       		</div>
+		       	</li>
+		       	<li>
+		       		<div class="box">
+		        		<div class="scrn">
+			        		<img src="images/summary/ep6.jpg" width="100%">
+			        	</div>
+			        	<div class="smr">
+			        		<h3># 6</h3>
+			        		<hr size="1px" color="#FFF" style="opacity: 50%;">
+			        		<p>남주와 여주는 꿈에 그리던 영국으로 넘어가기로 결심을 한다.
+									   남주와 여주는 아무 준비 없이, 그날 새벽 형에게 불쑥 찾아가서,
+									   부둣가까지 운전을 해줄 수 있는지 부탁한다.형은 꿈을 찾아 떠나지 못했던
+									   자신과는 달리 용감하게 떠나는 그들을 보며 응원하는 환호성을 지른다.</p>
+			        	</div>
+		        	</div>
+		        </li>
+		    </ul>
+		</div>
+	</section>
+</body>
+</html>

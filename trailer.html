@@ -1,0 +1,160 @@
+<!DOCTYPE html> <!-- 22061007권태리 -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TRAILER - SING STREET</title>
+
+	<!-- 레이아웃 -->
+	<style type="text/css">
+		html, body {
+			height: 100%;
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+			background-color: black;
+		}
+		nav {
+			width: 20%;
+			height: 50%;
+			margin-top: 2%;
+			margin-left: 3%;
+			position: fixed;
+		}
+		section {
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+		}
+    .v {
+      margin: 80px 0 0 300px;
+    }
+	</style>
+
+	<!-- 내비게이션 (고정) -->
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&display=swap');
+		nav {
+			font-family: 'Antonio', sans-serif;
+		}
+		nav a {
+			text-decoration: none;
+			transition: 0.5s;
+			color: rgba(256, 256, 256, 0.75);
+		}
+		nav a:hover {
+			color: rgb(256, 256, 256);
+		}
+		nav button {
+			font-family: 'Antonio', sans-serif;
+			background: transparent;
+			border: none;
+			font-size: 180%;
+		}
+		button img {
+			position: absolute;
+			left: 0;
+			width: 45%;
+			opacity: 75%;
+			transition: 0.5s;
+		}
+		button img:hover {
+			opacity: 100%;
+		}
+		.btn {
+			text-align: center;
+		}
+		.flipbtn {
+			background: transparent;
+			border: none;
+			transition: 0.5s;
+			color: rgba(256, 256, 256, 0.75);
+			padding: 0;
+			font-size: 17pt;
+			line-height: 30pt;
+		}
+		.flipbtn:hover {
+			color: rgb(256, 256, 256);
+		}
+		.panel_about {
+			display: none;
+			font-family: 'Antonio', sans-serif;
+		}
+		.panel_about a {
+			font-size: 15pt;
+		}
+		.panel_crtr {
+			display: none;
+			font-family: 'Antonio', sans-serif;
+		}
+		.panel_crtr a {
+			font-size: 15pt;
+		}
+		.panel_ost {
+			display: none;
+		}
+	</style>
+
+	<!-- 본문 -->
+  video{
+    margin:
+  }
+	<style type="text/css">
+	</style>
+
+	<!-- JavaScript-->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/fade.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".flip_about").click(function() {
+				$(".panel_about").slideToggle("slow");
+			});
+			$(".flip_crtr").click(function() {
+				$(".panel_crtr").slideToggle("slow");
+			});
+
+		});
+	</script>
+</head>
+<body>
+  <nav class="n">
+		<div class="panel">
+			<div> <!-- 메인으로 -->
+				<div class="btn">
+					<button>
+						<a href="index.html"><img src="images/logo.png"></a>
+					</button>
+				</div>
+				<br><br><br><br><br><br><br>
+			</div>
+			<div class="flip_about">
+				<button class="flipbtn" class="btn1">ABOUT</button>
+			</div>
+			<div class="panel_about">
+				<p><a href="summary.html">&nbsp;&nbsp;&nbsp;SUMMARY</a></p>
+				<p><a href="trailers.html">&nbsp;&nbsp;&nbsp;TRAILERS</a></p>
+			</div>
+			<div class="flip_crtr">
+				<button class="flipbtn">CHARACTERS</button>
+			</div>
+			<div class="panel_crtr">
+				<p><a href="cast.html">&nbsp;&nbsp;&nbsp;CAST</a></p>
+				<p><a href="famousline.html">&nbsp;&nbsp;&nbsp;FAMOUS LINES</a></p>
+			</div>
+			<div>
+				<button class="flipbtn"><a href="goods.html">GOODS</a></button>
+			</div>
+		</div>
+	</nav>
+	<section>
+		<!-- 본문 -->
+    <div class="v">
+      <video width="1000px" controls autoplay>
+        <source src="video.mp4" type="video/mp4">
+
+      </video>
+
+    </div>
+	</section>
+</body>
+</html>
